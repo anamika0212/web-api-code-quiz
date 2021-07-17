@@ -1,10 +1,18 @@
 body {
+  margin: 20px;
   background-color: #413D3D;
 }
 
+.wrapper{
+  margin: 0 auto; 
+  width: 700px; 
+  text-align: center; 
+   
+}
+
 .grid {
-  width: 600px;
-  height: 500px;
+  width: 1000px;
+  height: 1000px;
   margin: 0 auto;
   background-color: #fff;
   padding: 10px 50px 50px 50px;
@@ -14,12 +22,11 @@ body {
 
 .grid h1 {
   font-family: "sans-serif";
-  background-color: #01BBFF;
+  background-color: #1d1f1f;
   font-size: 60px;
   text-align: center;
   color: #ffffff;
   padding: 2px 0px;
-  
 }
 
 #score {
@@ -35,17 +42,39 @@ body {
 }
 
 .buttons {
+  background: darkmagenta
   margin-top: 30px;
 }
 
-#btn0, #btn1, #btn2, #btn3 {
-  background-color: #01BBFF;
-  width: 250px;
-  font-size: 20px;
+#scores, #start, #goback, #submit {
+  background-color:rgb(0, 139, 58);
+  font-size: 1.em;
   color: #fff;
-  border: 1px solid #1D3C6A;
-  margin: 10px 40px 10px 0px;
-  padding: 10px 10px;
+  border: 1px solid cornsilk;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+  display:inline-block;
+}
+
+#clear {
+  background-color:rgb(139, 0, 0);
+  font-size: 1.em;
+  color: #fff;
+  border: 1px solid cornsilk;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+}
+
+#btn0, #btn1, #btn2, #btn3 {
+  background-color:darkmagenta;
+  font-size: 1.em;
+  color: #fff;
+  border: 1px solid cornsilk;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
 }
 
 #btn0:hover, #btn1:hover, #btn2:hover, #btn3:hover {
@@ -60,4 +89,9 @@ body {
 #progress {
   color: #2b2b2b;
   font-size: 18px;
+}
+
+#success {
+  color: #2b2b2b;
+  font-size: 25px;
 }

@@ -2,33 +2,46 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title>Quiz</title>
+    <title>Coding Quiz</title>
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 </head>
 <body>
     <div class="grid">
-      <h1>Anamika Quiz Application</h1>
-      <button id="scores" onclick="highScores()">Show High Scores</button>
-      <button id="start" onclick="populate()">Start Quiz</button>
+      <h1>Coding Quiz Challenge</h1>
+      <button id="scores" class="buttons" onclick="printHighScores()">Show High Scores</button>
+      <button id="start" class="buttons" onclick="start()">Start Quiz</button>
         <div id="quiz" style="display:none">
             <hr style="margin-bottom: 20px">
-            <div>Time Remaining <span id="time">15</span> Seconds</div>
+            <div>Time Remaining <span id="time">75</span> Seconds</div>
  
             <p id="question"></p>
  
-            <div class="buttons">
-                <button id="btn0"><span id="choice0"></span></button>
-                <button id="btn1"><span id="choice1"></span></button>
-                <button id="btn2"><span id="choice2"></span></button>
-                <button id="btn3"><span id="choice3"></span></button>
+            <div class="buttons" >
+                <li><button id="btn0"><span id="choice0"></span></button></li>
+                <li><button id="btn1"><span id="choice1"></span></button></li>
+                <li><button id="btn2"><span id="choice2"></span></button></li>
+                <li><button id="btn3"><span id="choice3"></span></button></li>
             </div>
  
             <hr style="margin-top: 50px">
             <footer>
                 <p id="progress">Question x of y</p>
+                <p id="success"></p>
             </footer>
         </div>
+        <div id="end-screen" style="display:none">
+          <p>
+            Enter initials: <input type="text" id="initials" max="3" />
+            <button id="submit" onclick="saveHighscore()">Submit</button>
+          </p>
+          
+        </div>
+        <div id="highscoreslist" style="display:none">
+          <button id="clear" class="buttons" onclick="clearHighscores()">Clear High Scores</button>
+          <button id="goback" class="buttons" onclick="goback()">Go Back</button>
+        </div>
     </div>
+    
  
  
 <script src="./assets/JS/questions.js"></script>
