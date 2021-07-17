@@ -17,7 +17,9 @@ Quiz.prototype.guess = function(answer) {
     }
     else{
         // Reduce time for wrong answer.
-        remainingSeconds = remainingSeconds - 15;
+        if (remainingSeconds > 0){
+            remainingSeconds = remainingSeconds - 15;
+        }   
     }
  
     this.questionIndex++;
@@ -41,11 +43,13 @@ Question.prototype.isCorrectAnswer = function(choice) {
 function start() {
     document.querySelector('#time').textContent = 75;
     startTimer(75, document.querySelector('#time'));
+    var start = document.getElementById("start-screen");
+    start.style.display ="none";
     populate();
 } 
 function populate() {
   
-    if(quiz.isEnded()) {
+    if(quiz.isEnded() || remainingSeconds == 0) {
         showScores();
     }
     else {
@@ -119,7 +123,9 @@ var remainingSeconds = 75;
 function startTimer(duration, display) {
     var timer = duration, minutes, seconds;
     setInterval(function () {
-        remainingSeconds--;
+        if (remainingSeconds >0){
+            remainingSeconds--;
+        }      
         display.textContent = remainingSeconds;
 
         if (--timer < 0) {
@@ -186,9 +192,7 @@ function saveHighscore() {
     window.location.reload();
   }
 
-/* function clearTimer(){
-    clearInterval(timerFunction);
-} */
+
  
 // create quiz
 var quiz = new Quiz(questions);

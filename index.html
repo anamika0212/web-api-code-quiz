@@ -7,7 +7,13 @@
 </head>
 <body>
     <div class="grid">
-      <h1>Coding Quiz Challenge</h1>
+      <div class="wrapper">
+        <div id="start-screen" class="start">
+          <h1>Coding Quiz Challenge</h1>
+          <p>
+            Let's see what you know! Here are some code-related questions. Answer them all as quickly as you can and try to get the HIGH SCORE, but note that incorrect answers will result in a 15 second score/time penalty. Don't worry, you can try as many times as you want!
+          </p>
+      </div>
       <button id="scores" class="buttons" onclick="printHighScores()">Show High Scores</button>
       <button id="start" class="buttons" onclick="start()">Start Quiz</button>
         <div id="quiz" style="display:none">
@@ -16,7 +22,7 @@
  
             <p id="question"></p>
  
-            <div class="buttons" >
+            <div class="buttons">
                 <li><button id="btn0"><span id="choice0"></span></button></li>
                 <li><button id="btn1"><span id="choice1"></span></button></li>
                 <li><button id="btn2"><span id="choice2"></span></button></li>
