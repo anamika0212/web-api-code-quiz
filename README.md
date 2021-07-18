@@ -18,7 +18,7 @@ https://anamika0212.github.io/web-api-code-quiz/
 
 Images of the site:
 Home page:
-![Home Page](images/Home_page.png?raw=true "Home Page")
-![Initials Page](images/Initials_page.png?raw=true "Initials Page")
-![Questions Page](images/Questions_page.png?raw=true "Questions Page")
-![Clear HighScores](images/Clear_highscore.png?raw=true "Clear High Scores")
+![Home Page](assets/images/Home_page.png?raw=true "Home Page")
+![Initials Page](assets/images/Initials_page.png?raw=true "Initials Page")
+![Questions Page](assets/images/Questions_page.png?raw=true "Questions Page")
+![Clear HighScores](assets/images/Clear_highscore.png?raw=true "Clear High Scores")
