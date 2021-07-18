@@ -21,4 +21,4 @@ Home page:
 ![Home Page](assets/images/Home_page.png?raw=true "Home Page")
 ![Initials Page](assets/images/Initials_page.png?raw=true "Initials Page")
 ![Questions Page](assets/images/Questions_page.png?raw=true "Questions Page")
-![Clear HighScores](assets/images/Clear_highscore.png?raw=true "Clear High Scores")
+![Clear HighScores](assets/images/Clear_highscores.png?raw=true "Clear High Scores")
